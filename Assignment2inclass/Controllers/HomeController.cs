@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assignment2inclass.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,7 @@ namespace Assignment2inclass.Controllers
 {
     public class HomeController : Controller
     {
+        [CrawlerActionFilter]
         public ActionResult Index()
         {
             return View();
